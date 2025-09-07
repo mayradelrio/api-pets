@@ -1,0 +1,157 @@
+{
+  "info": {
+    "_postman_id": "22222222-3333-4444-5555-666666666666",
+    "name": "api-pets",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear Pet",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "name",
+              "value": "Luna",
+              "type": "text"
+            },
+            {
+              "key": "type",
+              "value": "dog",
+              "type": "text"
+            },
+            {
+              "key": "age",
+              "value": "4",
+              "type": "text"
+            },
+            {
+              "key": "owner",
+              "value": "Elizabeth",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://{{host}}:{{port}}/pets",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "{{port}}",
+          "path": [
+            "pets"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Listar Pets",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://{{host}}:{{port}}/pets",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "{{port}}",
+          "path": [
+            "pets"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Leer 1 Pet",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://{{host}}:{{port}}/pet/1",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "{{port}}",
+          "path": [
+            "pet",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Actualizar 1 Pet",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "name",
+              "value": "Luna",
+              "type": "text"
+            },
+            {
+              "key": "type",
+              "value": "dog",
+              "type": "text"
+            },
+            {
+              "key": "age",
+              "value": "5",
+              "type": "text"
+            },
+            {
+              "key": "owner",
+              "value": "Eli",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://{{host}}:{{port}}/pet/1",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "{{port}}",
+          "path": [
+            "pet",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Eliminar 1 Pet",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://{{host}}:{{port}}/pet/1",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "{{port}}",
+          "path": [
+            "pet",
+            "1"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "host",
+      "value": "127.0.0.1"
+    },
+    {
+      "key": "port",
+      "value": "8000"
+    }
+  ]
+}
