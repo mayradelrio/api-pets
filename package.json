@@ -1,0 +1,17 @@
+{
+  "name": "pets-api-sqlite",
+  "version": "1.0.0",
+  "description": "REST API in Node.js (Express) + SQLite with JS app and db files",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "initdb": "node db.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "sqlite3": "^5.1.7"
+  }
+}
